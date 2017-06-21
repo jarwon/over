@@ -1,0 +1,95 @@
+.welcome__intro {
+	text-align: center;
+	margin-top: 113px;
+		p:last-child {
+			text-transform: uppercase;
+			color: #1e1e2a;
+		}
+		p span {
+			text-transform: none;
+			font-style: italic;
+			color: $primary-colour;
+		}
+	.welcome__introtitle {
+		background-image: url(/assets/leaf.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		p {
+			color: #a8edea;
+			font-size: 1.8rem;
+			line-height: 3.333;
+			margin: 0;
+		}
+
+	}
+}
+
+.welcome__items {
+	margin-top: 96px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+		.welcome__left {
+			background: url("../assets/pink_cact-min.jpg") no-repeat center;
+			background-size: cover;
+			width: 39%;
+			padding: 20% 0;
+			margin: 1% 0 0 1%;
+			position: relative;
+		}
+		.welcome__right-container {
+			width: 58%;
+			display: flex;
+			flex-wrap: wrap;
+			margin: 1% 1% 0 0;
+				.welcome__right--office {
+					background: url("../assets/plant_01-min.jpg") no-repeat center;
+					background-size: cover;
+					width: 49%;
+					margin-right: 1%;
+					position: relative;
+				}
+				.welcome__right--house {
+					background: url("../assets/plant_02-min.jpg") no-repeat center;
+					background-size: cover;
+					width: 50%;
+					position: relative;
+				}
+				.welcome__right--bottom {
+					background: url("../assets/plant_05-min.jpg") no-repeat center;
+					background-size: cover;
+					width: 100%;
+					margin-top: 1%;
+					position: relative;
+				}
+		}
+}
+
+.welcome__centreblock {
+	background-color: #fff;
+	text-align: center;
+	width: 50%;
+	position: relative;
+	top: 40%;
+	left: 25%;
+	padding: 1% 0;
+	opacity: 0.8;
+	transition: 0.3s;
+		&:hover {
+			opacity: 1;
+		}
+		p {
+			color: #1a1a26;
+			font-size: 1.8rem;
+		}
+		p:last-child a {
+			color: $primary-colour;
+			font-size: 1.6rem;
+		}
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	-moz-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}

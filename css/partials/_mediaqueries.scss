@@ -1,0 +1,286 @@
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	header {
+		margin-top: 137px;
+	}
+	nav {
+		.nav__links {
+			font-size: 1.5rem;
+		}
+	}
+	.header__centreblock {
+		padding: 0 5%;
+	}
+	.products .products__item {
+			width: 33%;
+			margin-top: 2%;
+	}
+	.newsletter {
+		.brands__container {
+			width: 100%;
+			transform: scale(0.9);
+		}
+	}
+	.menu__toggle {
+		display: none;
+	}
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	nav {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+	.nav__logo {
+		margin: 0;
+	}
+	.nav__links {
+		display: none;
+	}
+	.nav__icons {
+		a {
+		margin: 0 20px;
+		}
+	}
+	}
+	.welcome__gallery {
+		.welcome__items {
+			display: flex;
+			.welcome__left {
+				width: 100%;
+				margin: 0;
+			}
+			.welcome__right-container {
+				width: 100%;
+				margin: 1% 0 0 0;
+				.welcome__right--office, .welcome__right--house, .welcome__right--bottom {
+					padding: 20% 0;
+				}
+			}
+		}
+	}
+	.video {
+		display: block;
+		.video__left {
+			width: 100%;
+		}
+		.video__right {
+			width: 100%;
+		}
+	}
+	.newsletter {
+		.brands__container {
+			transform: scale(0.8);
+		}
+	}
+	footer {
+		.footer__container {
+			flex-wrap: wrap;
+			.footer__over {
+				width: 100%;
+				p {
+					font-size: 1.5rem;
+				}
+			}
+			.footer__services, .footer__your-account, .footer__instagram {
+				width: 33%;
+			}
+		}
+	}
+
+	.menu__toggle {
+		width: 100%;
+		background-color: #fff;
+		margin-top: 137px;
+		font-size: 3rem;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		text-align: center;
+			ul {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+			}
+			li {
+				padding: 0;
+				margin: 0 10px;
+				display: inline;
+			}
+	}
+}
+
+
+@media (max-width: 624px) {
+	.wrapper {
+		max-width: 90%;
+	}
+	nav {
+		display: flex;
+	}
+
+	.header__centreblock {
+		padding: 0 5%;
+	}
+	
+	.welcome__gallery {
+		.welcome__items {
+			display: flex;
+			.welcome__left {
+				width: 100%;
+				margin: 0;
+			}
+			.welcome__right-container {
+				width: 100%;
+				margin: 1% 0 0 0;
+				.welcome__right--office, .welcome__right--house, .welcome__right--bottom {
+					padding: 20% 0;
+				}
+			}
+		}
+	}
+	.products {
+		.products__item {
+			width: 50%;
+			margin-top: 2%;
+			p:first-of-type {
+				font-size: 2rem;
+			}
+			p {
+				font-size: 2rem;
+			}
+		}
+	}
+	.newsletter {
+		.brands__container {
+			margin: 5% 2%;
+		}
+	}
+	footer {
+		.footer__container {
+			.footer__services, .footer__your-account {
+				width: 48%;
+				font-size: 1.6rem;
+				margin: 0 1%;
+			}
+			.footer__instagram {
+				width: 100%;
+				.footer__instagram--container {
+						img {
+							width: 30%;
+							height: 45%;
+							margin-top: 5%;
+						}
+				}
+			}
+		}
+	}
+	.menu__toggle {
+		font-size: 2rem;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	header {
+		.header__centreblock {
+			margin: 0 20px;
+			p:nth-child(2) {
+				font-size: 3rem;
+				margin: 0 30px;
+			}
+		}
+	}
+	.products {
+		.products__links {
+			display: inline-block;
+			li {
+				margin: 0px 0px 20px 0px;
+				&:hover {
+					border-bottom: 0px;
+					margin: 0px 0px 20px 0px;
+				}
+			}
+		}
+		.products__item {
+			width: 100%;
+			margin: 2% 5% 0 5%;
+			p:first-of-type {
+				font-size: 2rem;
+			}
+			p {
+				font-size: 2rem;
+			}
+			&:hover {
+				filter: grayscale(100%);
+			}
+		}
+	}
+
+	.blog {
+		.blog__posts {
+			flex-wrap: wrap;
+			.blog__entry {
+				margin: 5% 1% 1% 1%;
+				position: relative;
+				width: 100%;
+					a {
+						display: block;
+						position: relative;
+					}
+					p:first-of-type {
+						color: $primary-colour;
+						font-size: 1.8rem;
+					}
+					p:nth-of-type(2) {
+						color: $link-colour;
+						font-size: 2rem;
+						font-weight: 600;
+					}
+					p:nth-of-type(3), {
+						color: $link-colour;
+						font-size: 1.6rem;
+						text-decoration: underline;
+						margin-top: 10px;
+					}
+			}
+		}
+	}
+
+	.newsletter {
+		.brands__container {
+			transform: scale(0.8);
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+
+	footer {
+		.footer__container {
+			flex-wrap: wrap;
+				.footer__over, .footer__services, .footer__your-account, .footer__instagram {
+					width: 100%;
+						p {
+							font-size: 1.8rem;
+						}
+						i {
+							transform: scale(2);
+							margin: 5%;
+						}
+				
+				.footer__instagram {
+						.footer__instagram--container {
+							img {
+								width: 46%;
+								margin: 2%;
+							}
+						}
+				}
+				}
+		}
+	}
+}

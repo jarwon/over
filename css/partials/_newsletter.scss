@@ -1,0 +1,47 @@
+.newsletter {
+	margin: 5% 0;
+	text-align: center;
+	h2 {
+		&:after {
+				content: '';
+				display: block;
+				margin: 0 auto;
+				width: 120px;
+				height: 2px;
+				background: linear-gradient(to right, $accent-colour2 0%, $accent-colour2 30%, 
+					lightgray 30%, lightgray 70%, $accent-colour2 70%, $accent-colour2 100%);
+		}
+	}
+	p {
+		width: 60%;
+		margin: 0 auto;
+		padding: 5% 0;
+	}
+
+	.newsletter__email {
+		width: 50%;
+		border: none;
+		border-bottom: 1px solid #e6e5e1;
+		outline: none;
+		padding-bottom: 1%;
+		background-color: transparent;
+		font-size: 1.4rem;
+	}
+
+	button {
+		background-color: transparent;
+		border: none;
+		margin-left: -30px;
+	}
+
+	.brands__container {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		margin-top: 10%;
+		img:hover {
+			opacity: 0.5;
+			transition: 0.3s;
+		}
+	}
+}

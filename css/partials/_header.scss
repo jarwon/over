@@ -1,0 +1,54 @@
+header {
+	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../assets/hero-min.jpg") no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	height: calc(100vh - 137px);
+	// margin-top: 137px;
+		.header__centreblock {
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			justify-content: center;
+			height: 100%;
+			align-items: center;
+			text-align: center;
+			position: relative;
+			transition: opacity 2s ease-in;
+			p:first-child {
+				font-size: 3.2rem;
+				font-weight: 400;
+				line-height: 1.875;
+				padding: 0;
+				margin: 0;
+			}
+			p:nth-child(2) {
+				color: $header-title;
+				font-size: 6rem;
+				font-weight: 500;
+				padding: 0;
+				margin: 0;
+			}
+			button {
+				outline: none;
+				border: none;
+				background-color: $accent-colour1;
+				width: 180px;
+				height: 60px;
+				font-family: Poppins;
+				color: #ffffff;
+				font-size: 1.6rem;
+				text-transform: uppercase;
+				margin-top: 50px;
+			}
+			.header__leftarrow {
+				position: absolute;
+				top: 50%;
+				left: 5%;
+			}
+			.header__rightarrow {
+				position: absolute;
+				top: 50%;
+				right: 5%;
+			}
+		}
+}
